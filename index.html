@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div><button class="link">View Hightscores</button></div>
+        <div>Time:<span class="timer-count">0</span></div>
+    </header>
+    <main>
+        <div class="card welcome" id="card0">
+            <h2 class="card-head">Coding Challenge</h2>
+            <div class="card-body">
+                Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </div>
+            <div class="btns">
+                <button id="start-button">Start</button>
+            </div>
+        </div>
+        <div class="card" id="card1" style="display:none">
+            <h2 class="card-head">Commonly used data types DO NOT Include:</h2>
+            <ul class="list">
+                <li class="item" data-number="1">1.strings</li>
+                <li class="item" data-number="2">2.booleans</li>
+                <li class="item" data-number="3">3.alerts</li>
+                <li class="item" data-number="4">4.numbers</li>
+            </ul>
+
+        </div>
+        <div class="card" id="card2" style="display:none">
+            <h2 class="card-head">The condition in and if/else statement is enclosed within ____.</h2>
+            <ul class="list">
+                <li class="item" data-number="1">1.quotes</li>
+                <li class="item" data-number="2">2.curly brackets</li>
+                <li class="item" data-number="3">3.parentheses</li>
+                <li class="item" data-number="4">4.square brackets</li>
+            </ul>
+
+        </div>
+        <div class="card" id="card3" style="display:none">
+            <h2 class="card-head">Arrays in JavaScript can be used to store ____.</h2>
+            <ul class="list">
+                <li class="item" data-number="1">1.numbers and strings</li>
+                <li class="item" data-number="2">2.other arrays</li>
+                <li class="item" data-number="3">3.booleans</li>
+                <li class="item" data-number="4">4.all of the above</li>
+            </ul>
+
+        </div>
+        <div class="card" id="card4" style="display:none">
+            <h2 class="card-head">String values must be enclosed within _____ when being assigned to variables</h2>
+            <ul class="list">
+                <li class="item" data-number="1">1.commas</li>
+                <li class="item" data-number="2">2.curly brackets</li>
+                <li class="item" data-number="3">3.quotes</li>
+                <li class="item" data-number="4">4.parentheses</li>
+            </ul>
+        </div>
+        <div class="card" id="card5" style="display:none">
+            <h2 class="card-head">A very useful tool used during development and debugging for printing content to the debugger is </h2>
+            <ul class="list">
+                <li class="item" data-number="1">1.JavaScript</li>
+                <li class="item" data-number="2">2.terminal/bash</li>
+                <li class="item" data-number="3">3.for loops</li>
+                <li class="item" data-number="4">4.console.log</li>
+            </ul>
+        </div>
+        <div class="result" style="display:none;"></div>
+        <div class="card" id="card6" style="display:none;">
+            <div>
+                <h3>Your final score is <span id="score-number"></span>.</h3>
+                <form class="btns name">
+                    <label for="initial-input">Enter initials:</label>
+                    <input type="text" id="initial-input" />
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                <p class="feedback" style="display: none; ">The field cannot be left blank.</p>
+            </div>
+
+        </div>
+        <div class="card" id="card7" style="display:none;">
+            <h2 class="card-head">Highscores</h2>
+            <ul class="record"></ul>
+            <div class="btns sum"><button class="back " onclick="location='index.html' ">Go Back</button><button id="clear">Clear Highscores</button>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js "></script>
+</body>
+
+</html>
